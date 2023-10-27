@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+    <RelativeLayout
+        android:id="@+id/circularMenu"
+        android:layout_width="match_parent"
+        android:layout_height="266dp"
+        android:background="@color/transparent"
+        android:layout_gravity="bottom|center"
+        android:visibility="gone"
+        android:gravity="center|bottom"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/purple_circle"
+            android:src="@drawable/ic_home"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/order"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/pink_circle"
+            android:src="@drawable/ic_order"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/scanner"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/yellow_circle"
+            android:src="@drawable/ic_scanner"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/product"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_circle"
+            android:src="@drawable/ic_product"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/green_circle"
+            android:src="@drawable/ic_person"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/socialmedia"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/pink_circle"
+            android:src="@drawable/ic_social"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            app:labelVisibilityMode="labeled"
+            android:background="#2196F3"
+            app:menu="@menu/bottom_navigation_menu" />
+
+
+    </RelativeLayout>
+    <ImageButton
+        android:id="@+id/triggerButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:layout_gravity="bottom|center"
+        android:background="@drawable/ic_menu"
+        tools:ignore="MissingConstraints" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

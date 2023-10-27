@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ArcMenu</string>
+    <string name="nav_lbl_home">Home</string>
+    <string name="nav_lbl_products">Products</string>
+    <string name="nav_lbl_order">Orders</string>
+    <string name="nav_lbl_account">Account</string>
+</resources>
